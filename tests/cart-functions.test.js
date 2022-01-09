@@ -57,47 +57,47 @@ describe("addItem", () => {
     expect(result).toEqual(result);
   });
 
-  // test("should return an itemsArray with one item in it", () => {
-  //   const itemsInArray = [{ name: "Beans", price: 3 }];
-  //   expect(cartFunctions.addItem(itemsInArray, "Sugar", 2));
-  // });
+  test("should return an itemsArray with one item in it", () => {
+    const itemsInArray = [{ name: "Beans", price: 3 }];
+    expect(cartFunctions.addItem(itemsInArray, "Sugar", 2));
+  });
 
-  // test("should return an itemsArray with one item in it", () => {
-  //   const itemsInArray2 = [
-  //     { name: "Beans", price: 3 },
-  //     { name: "Sugar", price: 2 },
-  //   ];
-  //   expect(cartFunctions.addItem(itemsInArray2, "Oil", 5));
-  // });
+  test("should return an itemsArray with one item in it", () => {
+    const itemsInArray2 = [
+      { name: "Beans", price: 3 },
+      { name: "Sugar", price: 2 },
+    ];
+    expect(cartFunctions.addItem(itemsInArray2, "Oil", 5));
+  });
 });
 
-// describe("removeItem", () => {
-//   test("removing the first element ", () => {
-//     const arrayItems = [
-//       { name: "Jelly", price: 3 },
-//       { name: "Cake", price: 5 },
-//       { name: "Candy", price: 2 },
-//     ];
-//     expect(cartFunctions.removeItem(arrayItems, 0));
-//   });
-//   test("removing the last element", () => {
-//     const arrayItems = [
-//       { name: "Jelly", price: 3 },
-//       { name: "Cake", price: 5 },
-//       { name: "Candy", price: 2 },
-//     ];
-//     expect(cartFunctions.removeItem(arrayItems, 2));
-//   });
-//   test("removing the middle or second element", () => {
-//     const arrayItems = [
-//       { name: "Jelly", price: 3 },
-//       { name: "Cake", price: 5 },
-//       { name: "Candy", price: 2 },
-//     ];
-//     expect(cartFunctions.removeItem(arrayItems, 1));
-//   });
-// test("removing the element from an array of one item", () => {
-//   const arrayItems = [{ name: "Jelly", price: 3 }];
-//   expect(cartFunctions.removeItem(arrayItems, 1));
-// });
-//});
+describe("removeItem", () => {
+  test("removing the first element ", () => {
+    const arrayItems = [
+      { name: "Jelly", price: 3 },
+      { name: "Cake", price: 5 },
+      { name: "Candy", price: 2 },
+    ];
+    expect(cartFunctions.removeItem(arrayItems, 0));
+  });
+  test("removing the last element", () => {
+    const arrayItems = [
+      { name: "Jelly", price: 3 },
+      { name: "Cake", price: 5 },
+      { name: "Candy", price: 2 },
+    ];
+    expect(cartFunctions.removeItem(arrayItems, 2));
+  });
+  test("removing the middle or second element", () => {
+    const arrayItems = [
+      { name: "Jelly", price: 3 },
+      { name: "Cake", price: 5 },
+      { name: "Candy", price: 2 },
+    ];
+    expect(cartFunctions.removeItem(arrayItems, 1));
+  });
+  test("removing the element from an array of one item", () => {
+    const arrayItems = [{ name: "Jelly", price: 3 }];
+    expect(cartFunctions.removeItem(arrayItems, 1));
+  });
+});

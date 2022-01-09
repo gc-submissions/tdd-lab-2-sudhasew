@@ -17,14 +17,15 @@ function getCoins(cents) {
   const quarters = getNumberOfCoins(cents, 25);
   const dimes = getNumberOfCoins(cents - quarters * 25, 10);
   const nickels = getNumberOfCoins(cents - quarters * 25 - dimes * 10, 5);
-  const pennys = getNumberOfCoins(
-    cents - quarters * 25 - dimes * 10 - nickels * 5
+  const pennies = getNumberOfCoins(
+    cents - quarters * 25 - dimes * 10 - nickels * 5,
+    1
   );
   return {
-    quarters,
-    dimes,
-    nickels,
-    pennys,
+    quarters: quarters,
+    dimes: dimes,
+    nickels: nickels,
+    pennies: pennies,
   };
 }
-module.exports = { getNumberOfCoins, getCoins };
+module.exports = getCoins;
