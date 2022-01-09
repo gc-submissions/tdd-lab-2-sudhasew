@@ -15,11 +15,13 @@ label {
   font-weight: bold;
 }
 
-td, th {
+td,
+th {
   padding: 3px 14px;
   text-align: right;
 }
-td:first-child, th:first-child {
+td:first-child,
+th:first-child {
   text-align: left;
 }
 
