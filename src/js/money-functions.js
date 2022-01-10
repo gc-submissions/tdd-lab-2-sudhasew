@@ -1,4 +1,15 @@
-function formatCurrency() {}
+function formatCurrency(amount) {
+  //return amount;
+  if (amount >= 0) {
+    amount = amount.toFixed(2);
+    console.log("positive amount", amount);
+    return `$${amount}`;
+  } else {
+    amount = amount.toFixed(2);
+    console.log("negative amount", amount);
+    return `-$${amount.substr(1)}`;
+  }
+}
 
 function getNumberOfCoins(cents, coinAmount) {
   let coins = 0;
@@ -28,4 +39,4 @@ function getCoins(cents) {
     pennies: pennies,
   };
 }
-module.exports = getCoins;
+module.exports = { getCoins, formatCurrency };
