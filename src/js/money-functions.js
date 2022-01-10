@@ -7,7 +7,7 @@ function formatCurrency(amount) {
   } else {
     amount = amount.toFixed(2);
     console.log("negative amount", amount);
-    return `-$${amount.substr(1)}`;
+    return `-$${amount.substr(1)}`; //`-$${amount.substr(1, 4)}`
   }
 }
 
